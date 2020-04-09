@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Fixed</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Relevant stylesheets -->
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css'>
+  <link rel='stylesheet' href='https://getbootstrap.com/docs/4.4/dist/css/bootstrap.min.css'>
+  <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+  <!-- Navbar creation & title -->
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <a class="navbar-brand" href="#">Text Transformer</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
+      aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Navbar content -->
+
+    <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="https://www.w3schools.com/" target="_blank">Repository<span
+              class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://www.w3schools.com/" target="_blank">Nu HTML Checker<span
+              class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://www.w3schools.com/" target="_blank">Wave Web Accessiblity Tool<span
+              class="sr-only">(current)</span></a>
+        </li>
+      </ul>
+
+    </div>
+  </nav>
+
+  <main>
+
+   Main jumbotron
+    <div class="jumbotron backImg">
+      <div class="container">
+         <!-- Main heading  -->
+        <h1 class="display-3 headerColor">JS Text Transformer</h1>
+        <!-- Description -->
+        <p class="headerColor"> Enter text below depending on what you want to do with your text.</p>
+      </div>
+    </div>
+
+    <div class="container texturedBackground">
+      <!-- Columns with dev info -->
+      <div class="row">
+        <div class="col-md-4">
+          <h2>Uppercase</h2>
+          <p>The text box below transforms your text into uppercase.</p>
+          <!-- Image and two buttons for seeing the code and page -->
+          <input autocomplete="off" id="textInput" />
+          <button id="btnSendText" class="btn-primary">Go!</button><br />
+          <span id="textOutput">default text</span>
+          <p>This text box replicates what you type</p>
+          <input autocomplete="off" id="textInputType" />
+        </div>
+        <div class="col-md-4">
+          <h2>Lowercase with a different font</h2>
+          <p>The text box below transforms your text into lowercase and with a different font.</p>
+          <!-- Image and two buttons for seeing the code and page -->
+          <input autocomplete="off" id="textInput2" />
+          <button id="btnSendText2" class="btn-primary">Go!</button><br />
+          <span id="textOutput2">default text</span>
+          <p>This text box replicates what you type</p>
+          <input autocomplete="off" id="textInputType2" />
+        </div>
+        <div class="col-md-4">
+          <h2>Bold, larger size, different color</h2>
+          <p>The text box below transforms your text into bold text, gives it a larger font size and a different color.</p>
+          <!-- Image and two buttons for seeing the code and page -->
+          <input autocomplete="off" id="textInput3" />
+          <button id="btnSendText3" class="btn-primary">Go!</button><br />
+          <span id="textOutput3">default text</span>
+          <p>This text box replicates what you type</p>
+          <input autocomplete="off" id="textInputType3" />
+        </div>
+      </div>
+
+      <hr>
+
+    </div> <!-- End of container of dev assignments -->
+
+  </main>
+
+  <!-- Footer -->
+
+  <footer class="container">
+    <p>&copy; Copyright© 2019-2020</p>
+  </footer>
+
+  <!-- JS scripts for bootstrap -->
+
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
+  <script src="scripts/scripts.js"></script>
+  <script src='https://getbootstrap.com/docs/4.4/dist/js/bootstrap.bundle.min.js'></script>
+</body>
+
+</html>

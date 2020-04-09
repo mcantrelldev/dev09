@@ -1,0 +1,25 @@
+/* Sets a light gray background color */
+body {
+  background-color: lightgray;
+  font-family: 'Roboto Mono', monospace;
+}
+
+/* Color for the header*/
+.headerColor {
+    color: black;
+}
+
+.capitalize {
+  text-transform: uppercase;
+}
+
+.lowerWithOtherFont {
+  text-transform: lowercase;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.boldLargerColor {
+  font-weight: bold;
+  font-size: larger;
+  color: aqua;
+}
