@@ -1,69 +1,75 @@
 $(function () {
     console.log("ready!");
     $("#textOutput").text("");
-  
+
     //event listener in jQ
     $("#btnSendText").on("click", function (e) {
-      e.preventDefault();
-      var getInput = $("#textInput").val();
-      //then maybe some other span
-      $("#textOutput")
-        .html("<p>" + getInput + "</p>")
-        .addClass("capitalize");
+        e.preventDefault();
+        var getInput = $("#textInput").val();
+        // change the output accordingly
+        $("#textOutput")
+            .html("<p>" + getInput + "</p>")
+            .addClass("capitalize");
+        // set value back to blank
         $("#textInput").val("");
 
-      // then some code, somehow to change the format of the <p>, like css uppercase, lowercase, color, size, font-family...etc.
     });
+});
+
+// on each key, replicate to the input box below
+  $("#textInput").keyup(function () {
+      console.log('key');
+      var inputVal = $("#textInput").val();
+      $("#textInputType").val(inputVal);
   });
 
-$("#textInput").keyup( function() {
-    console.log('key');
-    var inputVal = $("#textInput").val();
-    $("#textInputType").val(inputVal);
- });
-
-  $(function () {
+$(function () {
     console.log("ready!");
     $("#textOutput2").text("");
-  
+
     //event listener in jQ
     $("#btnSendText2").on("click", function (e) {
-      e.preventDefault();
-      var getInput = $("#textInput2").val();
-      //then maybe some other span
-      $("#textOutput2")
-        .html("<p>" + getInput + "</p>")
-        .addClass("lowerWithOtherFont");
+        e.preventDefault();
+        var getInput = $("#textInput2").val();
+        // change the output accordingly
+        $("#textOutput2")
+            .html("<p>" + getInput + "</p>")
+            .addClass("lowerWithOtherFont");
+        // set value back to blank
         $("#textInput2").val("");
-      // then some code, somehow to change the format of the <p>, like css uppercase, lowercase, color, size, font-family...etc.
+
     });
+});
+
+// on each key, replicate to the input box below
+  $("#textInput2").keyup(function () {
+      console.log('key');
+      var inputVal = $("#textInput2").val();
+      $("#textInputType2").val(inputVal);
   });
 
-$("#textInput2").keyup( function() {
-    console.log('key');
-    var inputVal = $("#textInput2").val();
-    $("#textInputType2").val(inputVal);
- });
-
-  $(function () {
+$(function () {
     console.log("ready!");
     $("#textOutput3").text("");
-  
+
     //event listener in jQ
     $("#btnSendText3").on("click", function (e) {
-      e.preventDefault();
-      var getInput = $("#textInput3").val();
-      //then maybe some other span
-      $("#textOutput3")
-        .html("<p>" + getInput + "</p>")
-        .addClass("boldLargerColor");
+        e.preventDefault();
+        var getInput = $("#textInput3").val();
+        // change the output accordingly
+        $("#textOutput3")
+            .html("<p>" + getInput + "</p>")
+            .addClass("boldLargerColor");
+        // set value back to blank
         $("#textInput3").val("");
-      // then some code, somehow to change the format of the <p>, like css uppercase, lowercase, color, size, font-family...etc.
+        
     });
 
-    $("#textInput3").keyup( function() {
-        console.log('key');
-        var inputVal = $("#textInput3").val();
-        $("#textInputType3").val(inputVal);
-     });
+    // on each key, replicate to the input box below
+  $("#textInput3").keyup(function () {
+      console.log('key');
+      var inputVal = $("#textInput3").val();
+      $("#textInputType3").val(inputVal);
   });
+
+});
