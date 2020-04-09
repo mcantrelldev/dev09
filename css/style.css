@@ -9,15 +9,18 @@ body {
     color: black;
 }
 
+/* Set style for first input */
 .capitalize {
   text-transform: uppercase;
 }
 
+/* Set style for second input */
 .lowerWithOtherFont {
   text-transform: lowercase;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
+/* Set style for third input */
 .boldLargerColor {
   font-weight: bold;
   font-size: larger;
